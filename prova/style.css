@@ -1,0 +1,120 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+}
+
+body { 
+    background: linear-gradient(135deg, #0f172a, #1e293b); 
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Header com efeito de desfoque */
+header { 
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    sticky: top;
+}
+
+header nav a { 
+    color: #94a3b8; 
+    text-decoration: none; 
+    margin-left: 25px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+header nav a:hover { 
+    color: #38bdf8; 
+}
+
+/* Layout dos Cards */
+.cards { 
+    display: flex; 
+    gap: 30px; 
+    padding: 50px; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card { 
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 30px; 
+    border-radius: 20px; 
+    width: 400px; /* Ajustado para não ficar exageradamente largo */
+    height: 180px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+}
+
+.card button { 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    border: none; 
+    background: linear-gradient(90deg, #38bdf8, #818cf8); 
+    color: white; 
+    border-radius: 8px; 
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Área do Formulário */
+.form { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+    margin: 50px 0; 
+}
+
+.form input { 
+    padding: 12px 20px; 
+    width: 300px; 
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.form button { 
+    background: #38bdf8; 
+    color: #0f172a; 
+    border: none; 
+    padding: 12px 25px; 
+    border-radius: 12px; 
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* Rodapé e Mensagem */
+footer {
+    background: #0f172a; 
+    color: #64748b; 
+    text-align: center; 
+    padding: 30px; 
+    margin-top: 50px;
+    border-top: 1px solid #1e293b;
+}
